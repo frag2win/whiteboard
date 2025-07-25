@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+/* Themes */
+body.light {
+  background-color: #ffffff;
+  color: #000;
+}
+body.light canvas {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+body.light .toolbar {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark canvas {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+body.dark .toolbar {
+  background-color: #222;
+  color: #fff;
+}
+
+body.colorful {
+  background-color: #ffe4ec;
+  color: #2a2a2a;
+}
+body.colorful canvas {
+  background-color: #fff0f6;
+  border: 1px solid #e38;
+}
+body.colorful .toolbar {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #2a2a2a;
+}
+
+#canvas {
+  display: block;
+  touch-action: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Floating Toolbar Container */
+.toolbar-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  overflow-x: auto;
+  z-index: 10;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  align-items: center;
+  justify-content: flex-start;
+  width: max-content;
+  transition: background-color 0.3s ease;
+}
+
+/* Buttons */
+button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+  touch-action: manipulation;
+}
+button:hover {
+  background: #eaeaea;
+}
+
+/* Inputs */
+#colorPicker, #textInput {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

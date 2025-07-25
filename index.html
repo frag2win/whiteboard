@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Whiteboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+<div class="toolbar-container">
+    <div class="toolbar">
+        <button id="pen">🖊 Pen</button>
+        <button id="eraser">🩹 Eraser</button>
+        <button id="rectangle">▭ Rect</button>
+        <button id="circle">⚪ Circle</button>
+        <button id="line">／ Line</button>
+        <button id="triangle">△ Triangle</button>
+        <button id="arrow">→ Arrow</button>
+        <input type="text" id="textInput" placeholder="Type text" />
+        <button id="text">🔤 Text</button>
+        <input type="color" id="colorPicker" value="#000000" />
+        <button id="undo">↩ Undo</button>
+        <button id="redo">↪ Redo</button>
+        <button id="clear">🧹 Clear</button>
+        <button id="save">💾 Save</button>
+        <button id="zoomIn">🔍 +</button>
+        <button id="zoomOut">🔍 -</button>
+        <button id="resetZoom">🔁 Reset</button>
+        <button id="lightTheme">🌞 Light</button>
+        <button id="darkTheme">🌙 Dark</button>
+        <button id="colorfulTheme">🌈 Colorful</button>
+    </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
